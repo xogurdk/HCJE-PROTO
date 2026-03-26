@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F5F2ED] text-[#433422] font-sans;
+  }
+}
+
+.sepia-theme {
+  background-color: #F4ECD8;
+  color: #5B4636;
+}
+
+.bookshelf-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.bookshelf-scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.bookshelf-scroll::-webkit-scrollbar-thumb {
+  background: rgba(67, 52, 34, 0.2);
+  border-radius: 10px;
+}
+
+.bookshelf-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(67, 52, 34, 0.3);
+}
